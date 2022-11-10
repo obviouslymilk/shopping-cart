@@ -7,6 +7,7 @@ App
         |_ Search
         |_ Cart
 |_ Main
+    |_ Homepage
     |_ Shop
         |_ Filters
             |_ Category
@@ -20,7 +21,6 @@ App
     |_ Cart
         |_ ProductsList
         |_ Checkout
-    |_ Help 
     |_ Product Page
         |_ Title
         |_ Thumbnail
