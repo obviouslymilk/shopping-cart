@@ -1,0 +1,28 @@
+App
+    |_ Header
+        |_ Logo
+        |_ Links
+            |_ Shop
+            |_ Help
+        |_ Search
+        |_ Cart
+|_ Main
+    |_ Shop
+        |_ Filters
+        |_ Products
+            |_ Product
+                |_ Thumbnail
+                |_ Name
+                |_ Price
+                |_ BuyButton
+    |_ Cart
+        |_ ProductsList
+        |_ Checkout
+    |_ Help 
+    |_ Product Page
+        |_ Title
+        |_ Thumbnail
+        |_ Description
+        |_ Price
+        |_ BuyButton
+|_ Footer
