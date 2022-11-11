@@ -9,9 +9,6 @@ App
 |_ Main
     |_ Homepage
     |_ Shop
-        |_ Filters
-            |_ Category
-                |_ CategoryRow
         |_ Products
             |_ Product
                 |_ Thumbnail
