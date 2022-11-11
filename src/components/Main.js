@@ -7,13 +7,11 @@ import { useState } from "react";
 import Product from "../containers/Product";
 
 export default function Main() {
-    const [products, setProducts] = useState(data.products);
-
     return <main>
         <Routes>
             <Route index element={<Home />} />
-            <Route path="/store" element={<Store data={products} />} />
-            <Route path="/product/:id" element={<Product />} />
+            <Route path="/store" element={<Store data={data.products} />} />
+            <Route path="/product/:id" element={<Product data={data.products} />} />
             <Route path="/cart" element={<Cart />} />
         </Routes>
     </main>
