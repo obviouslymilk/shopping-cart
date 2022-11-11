@@ -1,14 +1,19 @@
 
 import { useParams } from 'react-router-dom';
+import { findById } from '../utils/Utils';
 import Description from '../components/product/Description';
 
-export default function Product({ image, title, price, ages, pieces, id }) {
+export default function Product({ data }) {
 
-    // const { productId } = useParams();
+    const { id } = useParams();
+
+    const product = findById(data, id);
+
+    const { thumbnail, title, ages, pieces, price } = product;
 
     return <div>
         <div>
-            <img src={image} alt={title} />
+            <img src={thumbnail} alt={title} width={100} height={100} />
             <Description ages={ages} pieces={pieces} id={id} />
         </div>
         <div>

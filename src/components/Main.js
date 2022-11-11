@@ -10,9 +10,9 @@ export default function Main() {
     return <main>
         <Routes>
             <Route index element={<Home />} />
-            <Route path="/store" element={<Store data={data.products} />} />
-            <Route path="/product/:id" element={<Product data={data.products} />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="store" element={<Store data={data.products} />} />
+            <Route path="product/:id" element={<Product data={data.products} />} />
+            <Route path="cart" element={<Cart />} />
         </Routes>
     </main>
 }
