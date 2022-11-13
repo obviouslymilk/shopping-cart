@@ -1,8 +1,8 @@
-import ProductCard from './GridItem';
+import GridItem from './GridItem';
 
-export default function Grid({ data }) {
+export default function Grid({ data, onAdd }) {
     const products = data.map(p => {
-        return <ProductCard image={p.thumbnail} price={p.price} title={p.title} id={p.id} key={p.id} />
+        return <GridItem image={p.thumbnail} price={p.price} title={p.title} id={p.id} onAdd={onAdd} key={p.id} />
     })
 
     return <div className="products">
