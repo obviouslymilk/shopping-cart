@@ -1,4 +1,5 @@
 import CartItem from '../components/cart/CartItem';
+import OrderSummary from '../components/cart/OrderSummary';
 
 export default function Cart({ cart, onDelete, onAdd, onRemove }) {
     const children = []
@@ -19,5 +20,6 @@ export default function Cart({ cart, onDelete, onAdd, onRemove }) {
 
     return <div>
         {children}
+        <OrderSummary cart={cart} />
     </div>
 }
