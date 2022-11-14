@@ -1,11 +1,11 @@
-export default function Product({ image, title, price, quantity }) {
+export default function Product({ thumbnail, title, price, id,  quantity }) {
     return <div>
-        <img src={image} alt={title} />
+        <img src={thumbnail} alt={title} width={100} height={100} />
         <div>
             {title}
             <div>
-                {price}
-                {/** QUANTITY BUTTONS */}
+                <h4>{price}</h4>
+                <div>{quantity}</div>
             </div>
         </div>
         {/** REMOIVE BUTTON */}

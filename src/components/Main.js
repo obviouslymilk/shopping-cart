@@ -15,7 +15,10 @@ export default function Main() {
         const id = e.target.dataset.id;
         setCart({
             ...cart,
-            [id]: (cart[id] || 0) + 1
+            [id]: {
+                data: findById(data.products, id),
+                quantity: (cart[id]?.quantity || 0) + 1
+            }
         })
     }
 
