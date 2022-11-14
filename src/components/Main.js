@@ -24,7 +24,14 @@ export default function Main() {
 
     // it means not completely remove item from the curt but reduce its quantity
     const handleRemoveFromCart = (e) => {
-        
+        const id = e.target.dataset.id;
+        setCart({
+            ...cart,
+            [id]: {
+                data: findById(data.products, id),
+                quantity: Math.max((cart[id].quantity) - 1, 0)
+            }
+        })
     }
 
     const handleDeleteFromCart = (e) => {
@@ -39,7 +46,7 @@ export default function Main() {
             <Route index element={<Home />} />
             <Route path="store" element={<Store data={data.products} onAdd={handleAddToCart} />} />
             <Route path="product/:id" element={<Product data={data.products} onAdd={handleAddToCart} />} />
-            <Route path="cart" element={<Cart cart={cart} onDelete={handleDeleteFromCart} />} />
+            <Route path="cart" element={<Cart cart={cart} onDelete={handleDeleteFromCart} onRemove={handleRemoveFromCart} onAdd={handleAddToCart} />} />
         </Routes>
     </main>
 }
