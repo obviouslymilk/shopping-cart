@@ -1,9 +1,9 @@
-import Products from "../components/store/Grid";
+import Grid from "../components/store/Grid";
 
-export default function Store({ data }) {
+export default function Store({ data, onAdd }) {
 
     return <>
         <h1>Store</h1>
-        <Products data={data} />
+        <Grid data={data} onAdd={onAdd} />
     </>
 }

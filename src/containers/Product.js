@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { findById } from '../utils/Utils';
 import Description from '../components/product/Description';
 
-export default function Product({ data }) {
+export default function Product({ data, onAdd }) {
 
     const { id } = useParams();
 
@@ -19,7 +19,7 @@ export default function Product({ data }) {
         <div>
             <h1>{title}</h1>
             <h3>{price}</h3>
-            <button>Add to Cart</button>
+            <button data-id={id} onClick={onAdd}>Add to Cart</button>
         </div>
     </div>
 }
