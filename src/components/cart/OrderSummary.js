@@ -8,6 +8,13 @@ const OrderSummary = ({ cart }) => {
         sum += (data.price * item[1].quantity);
         quantity += item[1].quantity;
     }
+
+    if (quantity < 1) {
+        return <div>
+            <h3>You don't have anythin in your cart</h3>
+            <Link to="/store">Start shopping</Link>
+        </div>
+    }
     return <div>
         <h3>${sum} ({quantity} items)</h3>
         <Link to="/checkout"><button disabled={quantity === 0 ? true : false}>Checkout</button></Link>
