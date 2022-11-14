@@ -22,12 +22,24 @@ export default function Main() {
         })
     }
 
+    // it means not completely remove item from the curt but reduce its quantity
+    const handleRemoveFromCart = (e) => {
+        
+    }
+
+    const handleDeleteFromCart = (e) => {
+        const id = e.target.dataset.id;
+        const cartCopy = { ...cart }
+        delete cartCopy[id]
+        setCart(cartCopy);
+    }
+
     return <main>
         <Routes>
             <Route index element={<Home />} />
             <Route path="store" element={<Store data={data.products} onAdd={handleAddToCart} />} />
             <Route path="product/:id" element={<Product data={data.products} onAdd={handleAddToCart} />} />
-            <Route path="cart" element={<Cart cart={cart} />} />
+            <Route path="cart" element={<Cart cart={cart} onDelete={handleDeleteFromCart} />} />
         </Routes>
     </main>
 }

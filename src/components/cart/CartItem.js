@@ -1,4 +1,4 @@
-export default function Product({ thumbnail, title, price, id,  quantity }) {
+export default function Product({ thumbnail, title, price, id,  quantity, onDelete }) {
     return <div>
         <img src={thumbnail} alt={title} width={100} height={100} />
         <div>
@@ -8,6 +8,6 @@ export default function Product({ thumbnail, title, price, id,  quantity }) {
                 <div>{quantity}</div>
             </div>
         </div>
-        {/** REMOIVE BUTTON */}
+        <button data-id={id} onClick={onDelete}>Delete</button>
     </div>
 }
