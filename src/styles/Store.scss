@@ -1,3 +1,5 @@
+@use 'base';
+
 #grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -43,7 +45,7 @@
         height: 3rem;
         margin-top: auto;
         width: 100%;
-        background-color: #006cb7;
+        background-color: base.$blue;
         border-radius: 6px;
         border: none;
         color: white;
@@ -54,11 +56,11 @@
     }
 
     button:hover {
-        background-color: #0361a5; 
+        background-color: darken($color: base.$blue, $amount: 3); 
     }
 
     button:active {
-        background-color: #00395e; 
+        background-color: darken($color: base.$blue, $amount: 10); 
         scale: 1.02;
     }
 }
