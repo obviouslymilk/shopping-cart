@@ -16,7 +16,7 @@ const OrderSummary = ({ cart }) => {
         </div>
     }
     return <div>
-        <h3>${sum} ({quantity} items)</h3>
+        <h3>${sum.toFixed(2)} ({quantity} items)</h3>
         <Link to="/checkout"><button disabled={quantity === 0 ? true : false}>Checkout</button></Link>
     </div>
 }
