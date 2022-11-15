@@ -11,7 +11,7 @@ const OrderSummary = ({ cart }) => {
 
     if (quantity < 1) {
         return <div>
-            <h3>You don't have anythin in your cart</h3>
+            <h3>You don't have anything in your cart</h3>
             <Link to="/store">Start shopping</Link>
         </div>
     }
