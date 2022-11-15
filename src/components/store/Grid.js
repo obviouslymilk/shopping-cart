@@ -5,7 +5,7 @@ export default function Grid({ data, onAdd }) {
         return <GridItem image={p.thumbnail} price={p.price} title={p.title} id={p.id} onAdd={onAdd} key={p.id} />
     })
 
-    return <div className="products">
+    return <div id="grid">
         {products}
     </div>
 }

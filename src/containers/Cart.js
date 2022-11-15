@@ -1,5 +1,6 @@
 import CartItem from '../components/cart/CartItem';
 import OrderSummary from '../components/cart/OrderSummary';
+import '../styles/Store.scss'
 
 export default function Cart({ cart, onDelete, onAdd, onRemove }) {
     const children = []
