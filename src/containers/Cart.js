@@ -19,8 +19,8 @@ export default function Cart({ cart, onDelete, onAdd, onRemove }) {
         />)
     }
 
-    return <div>
-        {children}
+    return <div id='cart'>
+        <div id='cart-items'>{children}</div>
         <OrderSummary cart={cart} />
     </div>
 }

@@ -1,15 +1,15 @@
 import QuantityController from "../../utils/QuantityController";
 
 export default function Product({ thumbnail, title, price, id,  quantity, onDelete, onAdd, onRemove }) {
-    return <div>
-        <img src={thumbnail} alt={title} width={100} height={100} />
-        <div>
-            {title}
-            <div>
-                <h4>{price}</h4>
+    return <div className="cart-item">
+        <img src={thumbnail} alt={title}/>
+        <div className="cart-item-info">
+            <h3>{title}</h3>
+            <div className="cart-item-price">
+                <h4>${price}</h4>
                 <QuantityController onRemove={onRemove} onAdd={onAdd} id={id} quantity={quantity} key={id} />
             </div>
         </div>
-        <button data-id={id} onClick={onDelete}>Delete</button>
+        <button className="delete" data-id={id} onClick={onDelete}>D</button>
     </div>
 }
