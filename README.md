@@ -1,0 +1,1 @@
+*Created as a part of <img src="https://github.com/TheOdinProject/theodinproject/blob/main/app/assets/images/icons/odin-icon.svg" data-canonical-src="https://github.com/TheOdinProject/theodinproject/blob/main/app/assets/images/icons/odin-icon.svg" width="18" height="18"/>[The Odin Project](https://www.theodinproject.com/dashboard) curriculum.*
