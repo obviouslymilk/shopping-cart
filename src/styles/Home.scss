@@ -1,0 +1,35 @@
+@use 'base';
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    height: calc(100vh - 50px);
+    padding: 1rem;
+
+    h1 {
+        margin: 0;
+        color: white;
+        font-size: 4rem;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    button {
+        margin: 0;
+        width: max(20%, 300px);
+        background-color: base.$darkblue;
+        z-index: 1;
+    }
+
+    img {
+        position: absolute;
+        height: 90%;
+        object-fit: cover;
+        width: 100%;
+        z-index: 0;
+        top: 0;
+    }
+}

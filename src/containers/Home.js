@@ -1,3 +1,8 @@
+import "../styles/Home.scss";
+
 export default function Home() {
-    return <h1>Homepage</h1>
+    return <div id="home">
+        <h1>Welcome!</h1>
+        <button>Start shopping</button>
+    </div>
 }
