@@ -10,9 +10,8 @@ const OrderSummary = ({ cart }) => {
     }
 
     if (quantity < 1) {
-        return <div id="no-order">
+        return <div id="order-summary">
             <h3>You don't have anything in your cart</h3>
-            <Link to="/store">Start shopping</Link>
         </div>
     }
     return <div id="order-summary">
