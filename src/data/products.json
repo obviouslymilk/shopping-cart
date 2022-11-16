@@ -9,12 +9,44 @@
             "pieces": 312
         },
         {
-            "id": 10308,
-            "thumbnail": "https://www.lego.com/cdn/cs/set/assets/bltfb3ccae42fc241c7/10308.png",
-            "title": "Holiday Main Street",
-            "price": 99.99,
-            "ages": 9,
-            "pieces": 312
+            "id": 21336,
+            "thumbnail": "https://www.lego.com/cdn/cs/set/assets/blt07d89d3bb6115752/21336.png",
+            "title": "The Office",
+            "price": 119.99,
+            "ages": 18,
+            "pieces": 1164
+        },
+        {
+            "id": 76215,
+            "thumbnail": "https://www.lego.com/cdn/cs/set/assets/blt6594e9e9614f362f/76215.png",
+            "title": "Black Panther",
+            "price": 349.99,
+            "ages": 18,
+            "pieces": 2961
+        },
+        {
+            "id": 75331,
+            "thumbnail": "https://www.lego.com/cdn/cs/set/assets/bltdbe9230cce3804cf/75331.png",
+            "title": "The Razor Crest",
+            "price": 599.99,
+            "ages": 18,
+            "pieces": 6187
+        },
+        {
+            "id": 76213,
+            "thumbnail": "https://www.lego.com/cdn/cs/set/assets/blt6b2c897c05f591f3/76213.png",
+            "title": "King Namor’s Throne Room",
+            "price": 34.99,
+            "ages": 7,
+            "pieces": 355
+        },
+        {
+            "id": 5007032,
+            "thumbnail": "https://www.lego.com/cdn/cs/set/assets/bltd1aa5353aaa5fee1/5007032.png",
+            "title": "Storage Brick 1-Stud – White",
+            "price": 11.99,
+            "ages": 6,
+            "pieces": 2
         }
     ]
 }
