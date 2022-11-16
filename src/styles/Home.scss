@@ -17,19 +17,4 @@
         z-index: 1;
     }
 
-    button {
-        margin: 0;
-        width: max(20%, 300px);
-        background-color: base.$darkblue;
-        z-index: 1;
-    }
-
-    img {
-        position: absolute;
-        height: 90%;
-        object-fit: cover;
-        width: 100%;
-        z-index: 0;
-        top: 0;
-    }
 }
