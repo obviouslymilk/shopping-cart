@@ -1,0 +1,11 @@
+@use 'base';
+
+
+#footer {
+    background-color: base.$darkblue;
+    margin-top: auto;
+    color: white;
+    height: 50px;
+    padding: 1rem;
+    font-size: smaller;
+}
