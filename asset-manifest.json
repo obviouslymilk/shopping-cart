@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.1078e4fb.css",
+    "main.js": "/shopping-cart/static/js/main.bcab5b56.js",
+    "static/media/bg.jpg": "/shopping-cart/static/media/bg.6e8a4300727c22d2c831.jpg",
+    "static/media/github.png": "/shopping-cart/static/media/github.3ec61b93854178c47369.png",
+    "static/media/logo.svg": "/shopping-cart/static/media/logo.1e6dd20e30321ad8d42d0f4fb6ce1928.svg",
+    "static/media/age.svg": "/shopping-cart/static/media/age.7ef56471b9b64adc41adb3da772b8e76.svg",
+    "static/media/piece.svg": "/shopping-cart/static/media/piece.4fb34bf0943ac529cbfe6a30778c23b5.svg",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/cart.svg": "/shopping-cart/static/media/cart.287e70bcb24b99bd6facad3ebbef68ea.svg",
+    "static/media/id.svg": "/shopping-cart/static/media/id.52ec070b9ef138aa0b5531867f4c85f3.svg",
+    "static/media/delete.svg": "/shopping-cart/static/media/delete.3270f2c93c8c138fa6cc69fbd18f985e.svg",
+    "main.1078e4fb.css.map": "/shopping-cart/static/css/main.1078e4fb.css.map",
+    "main.bcab5b56.js.map": "/shopping-cart/static/js/main.bcab5b56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1078e4fb.css",
+    "static/js/main.bcab5b56.js"
+  ]
+}
