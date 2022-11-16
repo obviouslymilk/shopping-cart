@@ -1,4 +1,5 @@
 import QuantityController from "../../utils/QuantityController";
+import deleteIcon from '../../assets/delete.svg';
 
 export default function Product({ thumbnail, title, price, id,  quantity, onDelete, onAdd, onRemove }) {
     return <div className="cart-item">
@@ -10,6 +11,6 @@ export default function Product({ thumbnail, title, price, id,  quantity, onDele
                 <QuantityController onRemove={onRemove} onAdd={onAdd} id={id} quantity={quantity} key={id} />
             </div>
         </div>
-        <button className="delete" data-id={id} onClick={onDelete}>D</button>
+        <img className="delete" src={deleteIcon} data-id={id}  onClick={onDelete} alt="Delete" />
     </div>
 }

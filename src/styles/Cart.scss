@@ -64,10 +64,13 @@
     }
 
     .delete {
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         top: 0;
         background: none;
+        opacity: 30%;
+        cursor: pointer;
+        margin: 0.2rem;
     }
     
 }
