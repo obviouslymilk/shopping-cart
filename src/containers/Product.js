@@ -20,7 +20,7 @@ export default function Product({ data, onAdd, onRemove, cart }) {
         <div className='info'>
             <h1>{title}</h1>
             <h3>${price}</h3>
-            <QuantityController id={id} onAdd={onAdd} onRemove={onRemove} quantity={cart[id]?.quantity || 0} />
+            <span>In Cart:</span> <QuantityController id={id} onAdd={onAdd} onRemove={onRemove} quantity={cart[id]?.quantity || 0} />
             <Description ages={ages} pieces={pieces} id={id} />
             <button data-id={id} onClick={onAdd}>Add to Cart</button>
         </div>
