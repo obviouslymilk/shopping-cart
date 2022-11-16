@@ -2,10 +2,17 @@
 
 
 #footer {
+    display: flex;
     background-color: base.$darkblue;
     margin-top: auto;
     color: white;
     height: 50px;
     padding: 1rem;
     font-size: smaller;
+    justify-content: space-between;
+
+    img {
+        margin-left: auto;
+        height: 60%;
+    }
 }
