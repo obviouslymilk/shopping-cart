@@ -64,7 +64,7 @@ export default function Main() {
         <Routes>
             <Route index element={<Home />} />
             <Route path="store" element={<Store data={data.products} onAdd={handleAddFromStore} />} />
-            <Route path="product/:id" element={<Product data={data.products} onAdd={handleAddToCart} />} />
+            <Route path="product/:id" element={<Product data={data.products} onAdd={handleAddToCart} onRemove={handleRemoveFromCart} cart={cart} />} />
             <Route path="cart" element={<Cart cart={cart} onDelete={handleDeleteFromCart} onRemove={handleRemoveFromCart} onAdd={handleAddToCart} />} />
             <Route path="checkout" element={<Checkout />} />
         </Routes>

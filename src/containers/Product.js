@@ -2,8 +2,10 @@
 import { useParams } from 'react-router-dom';
 import { findById } from '../utils/Utils';
 import Description from '../components/product/Description';
+import '../styles/Product.scss';
+import QuantityController from '../utils/QuantityController'
 
-export default function Product({ data, onAdd }) {
+export default function Product({ data, onAdd, onRemove, cart }) {
 
     const { id } = useParams();
 
@@ -11,14 +13,15 @@ export default function Product({ data, onAdd }) {
 
     const { thumbnail, title, ages, pieces, price } = product;
 
-    return <div>
-        <div>
-            <img src={thumbnail} alt={title} width={100} height={100} />
-            <Description ages={ages} pieces={pieces} id={id} />
+    return <div className='product'>
+        <div className='desc'>
+            <img src={thumbnail} alt={title}/>
         </div>
-        <div>
+        <div className='info'>
             <h1>{title}</h1>
-            <h3>{price}</h3>
+            <h3>${price}</h3>
+            <QuantityController id={id} onAdd={onAdd} onRemove={onRemove} quantity={cart[id]?.quantity || 0} />
+            <Description ages={ages} pieces={pieces} id={id} />
             <button data-id={id} onClick={onAdd}>Add to Cart</button>
         </div>
     </div>
