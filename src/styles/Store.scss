@@ -40,27 +40,84 @@
         align-self: flex-start;
         margin: 6px 0px 24px 0px;
     }
+}
+
+button {
+    height: 3rem;
+    margin-top: auto;
+    width: 100%;
+    background-color: base.$blue;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color, scale 0.2s;
+}
+
+button:hover {
+    background-color: darken($color: base.$blue, $amount: 3); 
+}
+
+button:active {
+    background-color: darken($color: base.$blue, $amount: 10); 
+    scale: 1.02;
+}
+
+#purchase-dialog {
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    width: 20%;
+
+    &::backdrop {
+        background: rgba(44, 44, 44, 0.25);
+    }
+
+    h3 {
+        margin: 0;
+    }
     
-    button {
-        height: 3rem;
-        margin-top: auto;
+
+    div {
+        display: flex;
+        gap: 12px;
+        flex-flow: row;
+
+        #continue {
+            background-color: white;
+            color: base.$blue;
+            border: 2px solid base.$blue;
+        }
+
+    }
+
+
+    #purchased-image {
+        height: 150px;
+        width: 150px;
+        object-fit: scale-down;
+    }
+
+    #purchased-info {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+
+        h3 {
+            margin: 0;
+        }
+
+        h4 {
+            margin: 0;
+            font-weight: 400;
+        }
+
+    }
+
+    #purchased-cart {
         width: 100%;
-        background-color: base.$blue;
-        border-radius: 6px;
-        border: none;
-        color: white;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color, scale 0.2s;
     }
 
-    button:hover {
-        background-color: darken($color: base.$blue, $amount: 3); 
-    }
-
-    button:active {
-        background-color: darken($color: base.$blue, $amount: 10); 
-        scale: 1.02;
-    }
 }
