@@ -7,7 +7,7 @@ Shopping Cart app made to practice client-side routing with <img src="https://re
 ## Getting Started
 ```
 git clone https://github.com/obviouslymilk/shopping-cart.git
-cd memory-card
+cd shopping-cart
 npm install
 npm start
 ```
